@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Paytone+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 1000px;
+  max-width: none;
+  padding: 0;
+}
+
+.login-card {
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  height: 455px;
+  width: 1000px;
+}
+
+.login-form {
+  flex: 1.7;
+  padding: 40px;
+  padding-bottom: 50px;
+  margin: 20px;
+  margin-bottom: 30px;
+}
+
+.login-form h1 {
+  color: #006b54;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Paytone One", sans-serif;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.input-group {
+  margin-bottom: 20px;
+  padding: 0 50px;
+}
+
+input {
+  width: 23rem;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  font-size: 14px;
+}
+
+.login-btn {
+  width: 30%;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background-color: #006b54;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #005543;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-section {
+  background-color: #006b54;
+  color: white;
+  padding: 40px;
+  flex: none;
+  width: 411px;
+  height: 455px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.welcome-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: "Paytone One", sans-serif;
+  font-weight: 500;
+}
+
+.welcome-section p:first-of-type {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.welcome-section p.divider {
+  margin-bottom: 1px;
+  margin-top: 30px;
+}
+
+.btn-outline, .guest-btn {
+  padding: 12px 30px;
+  border: 2px solid white;
+  border-radius: 25px;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 10px 0;
+  text-decoration: none;
+}
+
+.btn-outline:hover, .guest-btn:hover {
+  background-color: white;
+  color: #006b54;
+}
+
+.divider {
+  margin: 20px 0;
+}
+
+.password-container {
+  position: relative;
+  width: 23rem;
+}
+
+.password-container i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #006b54;
+}
