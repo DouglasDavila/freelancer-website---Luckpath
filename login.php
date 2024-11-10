@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../final/style/login.css">
+    <link rel="stylesheet" href="style/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
@@ -34,28 +34,13 @@
             <div class="welcome-section">
                 <h2>Que Bom Te Ver!</h2>
                 <p>Não possui uma conta?</p>
-                <a href="../final/cadastro.php" class="btn-outline">Cadastrar-se</a>
+                <a href="cadastro.php" class="btn-outline">Cadastrar-se</a>
                 <p class="divider">Ou se preferir</p>
                 <button class="guest-btn">Entrar sem conta</button>
             </div>
         </div>
     </div>
-    <script>
-        document.getElementById('togglePassword').addEventListener('click', function() {
-            const senha = document.querySelector('input[name="senha"]');
-            const type = senha.getAttribute('type') === 'password' ? 'text' : 'password';
-            senha.setAttribute('type', type);
-            this.classList.toggle('fa-eye');
-            this.classList.toggle('fa-eye-slash');
-        });
-
-        document.getElementById('toggleConfirmPassword').addEventListener('click', function() {
-            const confirmarSenha = document.querySelector('input[name="confirmar_senha"]');
-            const type = confirmarSenha.getAttribute('type') === 'password' ? 'text' : 'password';
-            confirmarSenha.setAttribute('type', type);
-            this.classList.toggle('fa-eye');
-            this.classList.toggle('fa-eye-slash');
-        });
-    </script>
+    <!-- Carregue o JavaScript de um arquivo externo -->
+    <script src="js/login.js"></script>
 </body>
 </html> 

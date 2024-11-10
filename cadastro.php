@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Conta</title>
-    <link rel="stylesheet" href="../final/style/cadastro.css">
+    <link rel="stylesheet" href="style/cadastro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
@@ -42,23 +42,7 @@
             </div>
         </div>
     </div>
-    <script>
-        document.getElementById('togglePassword').addEventListener('click', function() {
-            const senha = document.querySelector('input[name="senha"]');
-            const type = senha.getAttribute('type') === 'password' ? 'text' : 'password';
-            senha.setAttribute('type', type);
-            this.classList.toggle('fa-eye');
-            this.classList.toggle('fa-eye-slash');
-        });
-
-        document.getElementById('toggleConfirmPassword').addEventListener('click', function() {
-            const confirmarSenha = document.querySelector('input[name="confirmar_senha"]');
-            const type = confirmarSenha.getAttribute('type') === 'password' ? 'text' : 'password';
-            confirmarSenha.setAttribute('type', type);
-            this.classList.toggle('fa-eye');
-            this.classList.toggle('fa-eye-slash');
-        });
-    </script>
+    <script src="js/cadastro.js"></script>
 </body>
 
 </html>
