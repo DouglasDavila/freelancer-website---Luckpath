@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criar Conta</title>
-    <link rel="stylesheet" href="style/cadastro.css">
+    <link rel="stylesheet" href="../style/cadastro.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
@@ -15,9 +15,9 @@
             <div class="welcome-side">
                 <h2>Bem Vindo!</h2>
                 <p>Já possui uma conta?</p>
-                <a href="../final/login.php" class="btn-outline">Fazer Login</a>
+                <a href="login.php" class="btn-outline">Fazer Login</a>
                 <p class="divider">Ou se preferir</p>
-                <a href="guest.php" class="btn-outline">Entrar sem conta</a>
+                <a href="../guest.php" class="btn-outline">Entrar sem conta</a>
             </div>
             <div class="form-side">
                 <h1>Criar Conta</h1>
@@ -42,7 +42,7 @@
             </div>
         </div>
     </div>
-    <script src="js/cadastro.js"></script>
+    <script src="../js/cadastro.js"></script>
 </body>
 
 </html>
