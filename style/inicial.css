@@ -1,0 +1,158 @@
+/* Importando a fonte Rampart One do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #005544;
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.logo {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Rampart One', cursive;
+    display: flex;
+    align-items: center;
+    margin-top: -5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.sub-nav {
+    background-color: transparent;
+    padding: 0.8rem 2rem;
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+    justify-content: flex-end;
+}
+
+.sub-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.sub-nav a:hover {
+    color: #005544;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero {
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-position: center 30%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-container {
+    display: flex;
+    gap: 4rem;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+.button-primary {
+    background-color: #005544;
+    color: white;
+}
+
+.button-secondary {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+/* Links do header */
+.header-button {
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+}

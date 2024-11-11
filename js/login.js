@@ -1,17 +1,27 @@
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('togglePassword').addEventListener('click', function() {
-        const senha = document.querySelector('input[name="senha"]');
-        const type = senha.getAttribute('type') === 'password' ? 'text' : 'password';
-        senha.setAttribute('type', type);
-        this.classList.toggle('fa-eye');
-        this.classList.toggle('fa-eye-slash');
+function togglePasswordVisibility(inputId, toggleId) {
+    const input = document.getElementById(inputId);
+    const toggle = document.getElementById(toggleId);
+    
+    toggle.addEventListener('click', function() {
+        const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+        input.setAttribute('type', type);
+        
+        toggle.classList.toggle('fa-eye');
+        toggle.classList.toggle('fa-eye-slash');
     });
+}
 
-    document.getElementById('toggleConfirmPassword').addEventListener('click', function() {
-        const confirmarSenha = document.querySelector('input[name="confirmar_senha"]');
-        const type = confirmarSenha.getAttribute('type') === 'password' ? 'text' : 'password';
-        confirmarSenha.setAttribute('type', type);
-        this.classList.toggle('fa-eye');
-        this.classList.toggle('fa-eye-slash');
+document.addEventListener('DOMContentLoaded', function() {
+    togglePasswordVisibility('senha', 'togglePassword');
+    togglePasswordVisibility('confirmar_senha', 'toggleConfirmPassword');
+
+    document.querySelector('form').addEventListener('submit', function(e) {
+        const senha = document.getElementById('senha').value;
+        const confirmarSenha = document.getElementById('confirmar_senha').value;
+        
+        if (senha !== confirmarSenha) {
+            e.preventDefault();
+            alert('As senhas não coincidem!');
+        }
     });
 }); 

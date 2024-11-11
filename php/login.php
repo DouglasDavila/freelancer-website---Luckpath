@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdnjs.cloudflare.com; script-src 'self'">
     <title>Login</title>
     <link rel="stylesheet" href="../style/login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
-          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
-          crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -18,7 +13,6 @@
             <div class="login-form">
                 <h1>Login</h1>
                 <form action="process_login.php" method="POST" autocomplete="off">
-                    <input type="hidden" name="csrf_token" value="<?php echo htmlspecialchars(session_id()); ?>">
                     <div class="input-group">
                         <input type="email" name="email" id="email" placeholder="Email" required 
                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
@@ -43,24 +37,12 @@
             <div class="welcome-section">
                 <h2>Que Bom Te Ver!</h2>
                 <p>Não possui uma conta?</p>
-                <a href="cadastro.php" class="btn-outline" rel="noopener">Cadastrar-se</a>
+                <a href="cadastro.php" class="btn-outline">Cadastrar-se</a>
                 <p class="divider">Ou se preferir</p>
-                <a href="../guest.php" class="guest-btn" rel="noopener">Entrar sem conta</a>
+                <a href="../guest.php" class="guest-btn">Entrar sem conta</a>
             </div>
         </div>
     </div>
-    <script src="../js/login.js" defer integrity="sha384-VALOR_DO_HASH"></script>
-    
-    <script nonce="<?php echo htmlspecialchars(uniqid()); ?>">
-        document.querySelector('form').addEventListener('submit', function(e) {
-            const senha = document.getElementById('senha').value;
-            const confirmarSenha = document.getElementById('confirmar_senha').value;
-            
-            if (senha !== confirmarSenha) {
-                e.preventDefault();
-                alert('As senhas não coincidem!');
-            }
-        });
-    </script>
+    <script src="../js/login.js"></script>
 </body>
 </html> 

@@ -41,7 +41,7 @@ body {
 }
 
 .login-form h1 {
-  color: #006b54;
+  color: #005544;
   margin-bottom: 30px;
   text-align: center;
   font-weight: 600;
@@ -68,7 +68,7 @@ input {
   padding: 15px;
   border: none;
   border-radius: 25px;
-  background-color: #006b54;
+  background-color: #005544;
   color: white;
   font-size: 16px;
   cursor: pointer;
@@ -85,7 +85,7 @@ input {
 }
 
 .welcome-section {
-  background-color: #006b54;
+  background-color: #005544;
   color: white;
   padding: 40px;
   flex: none;
@@ -131,7 +131,7 @@ input {
 
 .btn-outline:hover, .guest-btn:hover {
   background-color: white;
-  color: #006b54;
+  color: #005544;
 }
 
 .divider {
@@ -149,5 +149,5 @@ input {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-  color: #006b54;
+  color: #005544;
 }
