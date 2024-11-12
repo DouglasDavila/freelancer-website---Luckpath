@@ -13,11 +13,10 @@ session_start(); // Inicia a sessão para verificar se usuário está logado
     <header class="header">
         <div class="logo">Luckypath</div>
         <nav class="nav-links">
-            <?php if(isset($_SESSION['user_id'])): ?>
-                <a href="#" class="header-button">Conta</a>
+            <a href="info.php" class="header-button">Conta</a>
+            <?php if(isset($_SESSION['email'])): ?>
                 <a href="logout.php" class="header-button">Sair</a>
             <?php else: ?>
-                <a href="#" class="header-button">Conta</a>
                 <a href="cadastro.php" class="header-button">Criar Conta</a>
             <?php endif; ?>
         </nav>
