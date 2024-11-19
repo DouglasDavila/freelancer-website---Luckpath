@@ -15,12 +15,12 @@
     <div class="containers-wrapper">
         <div class="container profile-container">
             <h2>Noob Hajime</h2>
-            <img src="profile-image.jpg" alt="Foto de perfil" class="profile-image">
+            <img src="../img/perfil_vazio.png" alt="Foto de perfil" class="profile-image">
             <p>Qui.</p>
             <button class="change-photo-btn">Mudar foto de perfil</button>
             <div class="social-links">
-                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="../img/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="../img/instagram.png" alt="Instagram"></a>
             </div>
             <p class="member-since">Membro desde 16 de Outubro de 2024</p>
         </div>

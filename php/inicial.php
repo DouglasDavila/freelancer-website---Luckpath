@@ -1,5 +1,5 @@
 <?php
-session_start(); // Inicia a sessão para verificar se usuário está logado
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -13,8 +13,8 @@ session_start(); // Inicia a sessão para verificar se usuário está logado
     <header class="header">
         <div class="logo">Luckypath</div>
         <nav class="nav-links">
-            <a href="info.php" class="header-button">Conta</a>
-            <?php if(isset($_SESSION['email'])): ?>
+            <?php if(isset($_SESSION['email']) && isset($_SESSION['senha'])): ?>
+                <a href="info.php" class="header-button">Conta</a>
                 <a href="logout.php" class="header-button">Sair</a>
             <?php else: ?>
                 <a href="cadastro.php" class="header-button">Criar Conta</a>
