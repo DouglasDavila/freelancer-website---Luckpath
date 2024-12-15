@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../style/info.css">
 </head>
 <body>
-    <div class="containers-wrapper">
+    <div class="containers">
         <div class="container profile-container">
             <h2>Noob Hajime</h2>
             <img src="../img/perfil_vazio.png" alt="Foto de perfil" class="profile-image">
@@ -26,25 +26,25 @@
         </div>
 
         <div class="container form-container">
-            <div class="edit-form">
+            <div class="form">
                 <h2>Editar Conta</h2>
                 <form action="update_profile.php" method="POST">
-                    <div class="form-group">
+                    <div class="input-group">
                         <label for="nome">Nome completo</label>
-                        <input type="text" id="nome" name="nome" value="Noob Hajime">
+                        <input type="text" id="nome" name="nome" value="Douglas Davila">
                     </div>
 
-                    <div class="form-group">
+                    <div class="input-group">
                         <label for="email">E-mail</label>
                         <input type="email" id="email" name="email" value="Ratatouille@gmail.com">
                     </div>
 
-                    <div class="form-group">
+                    <div class="input-group">
                         <label for="senha">Senha</label>
                         <input type="password" id="senha" name="senha" value="********">
                     </div>
 
-                    <div class="form-group">
+                    <div class="input-group">
                         <label for="confirmar_senha">Confirmar senha</label>
                         <input type="password" id="confirmar_senha" name="confirmar_senha" value="********">
                     </div>

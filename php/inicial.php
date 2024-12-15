@@ -31,7 +31,7 @@ session_start();
         <div class="hero-content">
             <h1 class="hero-title">Encontre o melhor profissional freelancer<br>para o que você precisar</h1>
             <div class="button-container">
-                <a href="#" class="button button-primary">Crie seu Projeto</a>
+                <a href="cadastro_de_proj.php" class="button button-primary">Crie seu Projeto</a>
                 <a href="#" class="button button-secondary">Oferte seu Serviço</a>
             </div>
         </div>

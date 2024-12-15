@@ -22,47 +22,38 @@ if (isset($_POST['acao']) && isset($_POST['email']) && isset($_POST['senha'])) {
 
 <body>
     <div class="container">
-        <div class="card-container">
-            <div class="welcome-side">
+        <div class="card">
+            <div class="bem-vindo">
                 <h2>Bem Vindo!</h2>
-                    <p>Já possui uma conta?</p>
+                <p>Já possui uma conta?</p>
                 <a href="login.php" class="btn-outline">Fazer Login</a>
                 <p class="divider">Ou se preferir</p>
                 <a href="inicial.php" class="btn-outline">Entrar sem conta</a>
             </div>
-            <div class="form-side">
+            <div class="form-card">
                 <h1>Criar Conta</h1>
-                <form action="processa_cadastro.php" method="POST" autocomplete="off">
-                        <div class="input-group">
-                            <input type="email" name="email" id="email" placeholder="Email">
+                <form action="processa_cadastro.php" method="POST">
+                    <div class="input-group">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="input-group">
+                        <div class="password-container">
+                            <input type="password" name="senha" id="senha" placeholder="Senha" maxlength="72">
+                            <i class="far fa-eye" id="togglePassword" aria-hidden="true"></i>
                         </div>
-                        <div class="input-group">
-                            <div class="password-container">
-                                <input type="password" name="senha" id="senha" placeholder="Senha" maxlength="72">
-                                <i class="far fa-eye" id="togglePassword" aria-hidden="true"></i>
-                            </div>
+                    </div>
+                    <div class="input-group">
+                        <div class="password-container">
+                            <input type="password" name="confirmar_senha" id="confirmar_senha" placeholder="Confirmar senha" maxlength="72">
+                            <i class="far fa-eye" id="toggleConfirmPassword" aria-hidden="true"></i>
                         </div>
-                        <div class="input-group">
-                            <div class="password-container">
-                                <input type="password" name="confirm" id="confirm" placeholder="Confirmar senha" maxlength="72">
-                                <i class="far fa-eye" id="toggleConfirmPassword" aria-hidden="true"></i>
-                            </div>
-                        </div>
+                    </div>
                     <button type="submit" class="btn-primary" name="acao" value="Salvar">Criar</button>
                 </form>
             </div>
         </div>
     </div>
     <script src="../js/cadastro.js"></script>
-    <script>
-        document.querySelector('form').onsubmit = function(e) {
-            if (document.getElementById('senha').value !== document.getElementById('confirmar_senha').value) {
-                e.preventDefault();
-                alert('As senhas não coincidem!');
-                return false;
-            }
-        };
-    </script>
 </body>
 
 </html>

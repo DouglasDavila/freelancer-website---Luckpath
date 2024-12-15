@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <div class="login-card">
+        <div class="card">
             <div class="login-form">
                 <h1>Login</h1>
                 <form action="process_login.php" method="POST" autocomplete="off">

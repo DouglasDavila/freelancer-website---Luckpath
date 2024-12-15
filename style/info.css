@@ -29,7 +29,7 @@ h2 {
     margin: 0px;
 }
 
-.containers-wrapper {
+.containers {
     display: flex;
     gap: 0;
     width: 100%;
@@ -42,7 +42,7 @@ h2 {
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     padding: 40px 20px;
-    border: 1px solid #005544;
+    border: 1px solid #004235;
     min-height: 400px;
 }
 
@@ -68,7 +68,7 @@ h2 {
 }
 
 .change-photo-btn {
-    background: #004d40;
+    background: #004235;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -93,7 +93,7 @@ h2 {
     margin-bottom: -30px;
 }
 
-.edit-form {
+.form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -102,19 +102,19 @@ h2 {
     padding: 0px 0px 0px 40px;
 }
 
-.form-group {
+.input-group {
     width: 80%;
     margin-bottom: 20px;
 }
 
-.form-group label {
+.input-group label {
     display: block;
     margin-bottom: 5px;
     color: #333;
     text-align: left;
 }
 
-.form-group input {
+.input-group input {
     width: 100%;
     padding: 6px;
     border: 1px solid #ddd;
@@ -123,7 +123,7 @@ h2 {
 }
 
 .save-btn {
-    background: #004d40;
+    background: #004235;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -132,7 +132,7 @@ h2 {
 }
 
 .info-link {
-    color: #004d40;
+    color: #004235;
     text-decoration: none;
     margin-left: 20px;
 }
